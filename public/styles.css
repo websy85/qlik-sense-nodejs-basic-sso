@@ -1,0 +1,82 @@
+body{
+  font-family: arial;
+  padding-top: 100px;
+}
+
+.main{
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+@media screen and (min-width: 1200px){
+  .main{
+      width: 1170px;
+      margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .main{
+      width: 970px;
+      margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .main{
+      width: 750px;
+      margin: 0 auto;
+  }
+}
+
+.logo-container{
+  display: block;
+  text-align: center;
+}
+
+.logo-container, .logo-container:active, .logo-container:visited, .logo-container:hover{
+  color: #5896d1;
+  text-decoration: none;
+}
+
+.logo{
+  background-image: url(/Websy-Logo.png);
+  width: 100%;
+  height: 85px;
+  background-size: 200px auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.login-form{
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 400px){
+  .login-form{
+      width: 90%;
+      margin: 0 auto;
+  }
+}
+
+input{
+  padding: 10px 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 1px solid #CCCCCC;
+  width: 100%;
+}
+
+button{
+  width: 100px;
+  padding: 10px 15px;
+  background-color: #5896d1;
+  font-size: 1em;
+  border: none;
+  color: white;
+  border-radius: 3px;
+}
