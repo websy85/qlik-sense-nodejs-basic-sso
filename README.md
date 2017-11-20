@@ -22,7 +22,7 @@ The example uses the Node.js and Expres to run a simple web server. For more inf
   1. Download or clone the git repository onto your machine. 
   2. Open a command/terminal window.
   3. Browse to the directory of the qlik-sense-nodejs-basic-sso.
-  4. Install the necessary dependencies by executing the 'npm install' command in this directory.
+  4. Install the necessary dependencies by executing the `npm install` command in this directory.
   5. Using a text editor, open the config.js file and update the following to reflect your environment -
     - SENSE_SERVER - This should be the host name or IP of your Qlik Sense Server
     - SENSE_PORT - The port being used to run Qlik Sense (typically 443).
