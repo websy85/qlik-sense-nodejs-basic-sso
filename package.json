@@ -4,7 +4,8 @@
   "description": "An example of using NodeJS to configure a simple SSO example for custom authentication with Qlik Sense",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
   },
   "repository": {
     "type": "git",

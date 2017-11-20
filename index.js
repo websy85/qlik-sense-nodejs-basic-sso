@@ -31,7 +31,7 @@ app.get('/login', function(req, res){
 
 app.post('/login', function(req, res){
   QRS.getTicket(req.body.username, function(err, ticket){
-    res.redirect("http://"+process.env.SENSE_SERVER+":"+process.env.SENSE_PORT+"/"+process.env.SENSE_PROXY+"/hub?qlikTicket="+ticket.Ticket);
+    res.redirect("https://"+process.env.SENSE_SERVER+":"+process.env.SENSE_PORT+"/"+process.env.SENSE_PROXY+"/hub?qlikTicket="+ticket.Ticket);
   })
 });
 

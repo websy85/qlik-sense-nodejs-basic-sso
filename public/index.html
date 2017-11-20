@@ -21,14 +21,20 @@
       <p>
         This example only requires a Username to be provided as we're not
         actually doing any authentication and any username will be accepted.
-        The code in the index.js file responsible for the 'authentication' is:
+        The code in the index.js file responsible for the 'authorisation' is:
       </p>
       <pre>
-
+        <code>
+          app.post('/login', function(req, res){
+            QRS.getTicket(req.body.username, function(err, ticket){
+              res.redirect("https://"+process.env.SENSE_SERVER+":"+process.env.SENSE_PORT+
+                "/"+process.env.SENSE_PROXY+"/hub?qlikTicket="+ticket.Ticket);
+            })
+          });
+        </code>
       </pre>
       <p>
-        If you want to integrate your own authentication then this is the code
-        that you'll want to change.
+        If you want to integrate your own authentication then you'll need add your own 'authentication' code before getting the ticket.
       </p>
     </div>
   </body>
