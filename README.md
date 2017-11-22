@@ -18,6 +18,7 @@ The example uses the Node.js and Expres to run a simple web server. For more inf
   7. Copy the certificate to the root of the Node.js project.
     - NOTE: Refer to the Qlik online help for more information on exporting certificates.
     - [Exporting Certificates](http://help.qlik.com/en-US/sense/November2017/Subsystems/ManagementConsole/Content/export-certificates.htm)
+    
 - Node.js
   1. Download or clone the git repository onto your machine. 
   2. Open a command/terminal window.
